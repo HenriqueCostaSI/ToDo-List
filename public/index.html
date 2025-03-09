@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div id="app">
+        <button type="toggleMode">Toggle Mode</button>
+        <hr />
+        <form action="#" id="taskForm">
+            <fieldset id="todoSet">
+                <legend>ToDo:</legend>
+                <label for="todoDescription">Description:</label>
+                <input type="text" name="todoDescription" required />
+                <button type="submit">Submit</button>
+            </fieldset>
+            <fieldset>
+                <legend>Remider:</legend>
+                <label for="notification">Notify by:</label>
+                <select name="notifications" id="">
+                    <option value="SMS">SMS</option>
+                    <option value="EMAIL">EMAIL</option>
+                    <option value="PUSH_NOTIFICATION">Push notification</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </fieldset>
+            
+           
+        </form>
+
+        <br>
+        <ul id="taskList" style="white-space: pre-line; list-style: none;"></ul>
+    </div>
+    <script src="./dist/index.js"></script>
+</body>
+</html>
